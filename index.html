@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Ползунок</title>
+  <script>
+   function var1Pic() {
+    var1 = document.getElementById("var1").value;
+    var2 = document.getElementById("var2").value;
+    var3 = document.querySelector('input[name="contact"]:checked').value;
+        if (var3 == 'Eco') {
+            type = 3400;
+        }else if (var3 == 'Lux') {
+            type = 4200;
+        }else if (var3 == 'Premium') {
+            type = 5200;
+        }
+    result = var1*var2/1000+type;
+    result = parseInt(result);
+    document.getElementById("result").innerHTML=result;
+   }
+  </script>
+ </head>
+ <body>
+    <div>
+        <input type="radio" id="contactChoice" name="contact" value="Eco" checked>
+        <label>Eco</label>
+        <input type="radio" id="contactChoice" name="contact" value="Lux">
+        <label>Lux</label>        
+        <input type="radio" id="contactChoice" name="contact" value="Premium">
+        <label>Premium</label>
+    </div>
+    <input name="first" type="range" min="100" max="2000" id="var1" oninput="var1Pic()" value="1050"> 
+    <input name="second" type="range" min="100" max="2000" id="var2" oninput="var1Pic()" value="1050"> <div>
+
+        <h1><div id="result"></div></h1>
+    	<form action="b0.php" method="post" target="_blank" name="f1">
+        <input  type="text" placeholder="Ваше имя" name="name1" required> 
+        <br>
+        <br>
+        <input  type="tel" placeholder="Ваш телефон" name="email1" required="required">
+        <br>
+        <br>
+        <textarea   placeholder="Ваш текст" name="text" required="required"></textarea>
+        <br>
+        <br>
+        <input  type="submit" value="отправить" name="sab">
+      </form>
+ </body>    
+</html>
