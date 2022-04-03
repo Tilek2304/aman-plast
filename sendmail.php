@@ -11,11 +11,11 @@
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('указать!', 'Фрилансер по жизни');
+	$mail->setFrom('esenaliev0004@gmail.com 'Обратный звонок');
 	//Кому отправить
-	$mail->addAddress('указать!');
+	$mail->addAddress('esenaliev2304@gmail.com');
 	//Тема письма
-	$mail->Subject = 'Привет! Это "Фрилансер по жизни"';
+	$mail->Subject = 'Пишет клиент';
 
 	//Рука
 	$hand = "Правая";
@@ -24,7 +24,7 @@
 	}
 
 	//Тело письма
-	$body = '<h1>Встречайте супер письмо!</h1>';
+	$body = '<h1>форма</h1>';
 	
 	if(trim(!empty($_POST['name']))){
 		$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
