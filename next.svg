@@ -77,7 +77,7 @@
          </xmpTPg:MaxPageSize>
          <xmpTPg:PlateNames>
             <rdf:Seq>
-               <rdf:li>Black</rdf:li>
+               <rdf:li>White</rdf:li>
             </rdf:Seq>
          </xmpTPg:PlateNames>
          <xmpTPg:SwatchGroups>
@@ -648,5 +648,5 @@
                            
 <?xpacket end="w"?>
 	</metadata>
-<path d="M166.4,137.9L166.4,137.9l-76.8,76.8l-9.9-9.9l76.8-76.8L79.7,51.2l9.9-9.9l76.8,76.8l0,0l9.9,9.9l-8.9,8.9L166.4,137.9z"/>
+<path fill="white" d="M166.4,137.9L166.4,137.9l-76.8,76.8l-9.9-9.9l76.8-76.8L79.7,51.2l9.9-9.9l76.8,76.8l0,0l9.9,9.9l-8.9,8.9L166.4,137.9z"/>
 </svg>
