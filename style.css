@@ -562,7 +562,7 @@ footer a{
         display:flex;
         flex-direction: column;
         justify-content: center;
-        padding:10px;
+        padding:10px 0;
         max-width:430px;
         min-width:350px;
     }
@@ -736,8 +736,8 @@ footer a{
         flex-direction: column;
         justify-content: center;
         padding:10px;
-        max-width:430px;
-        min-width: 350px;
+        max-width:410px;
+        min-width: 330px;
     }
     .camera-div{
         font-size: 20px;
