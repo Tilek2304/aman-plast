@@ -8,8 +8,27 @@ body{
     
 
 }
+#head a img{
+    height:34px;
+    width:50px;
+    
+    align-self: center;
+    vertical-align:middle ;
+    align-items: center;
 
 
+}
+a img{
+    height:26px;
+    align-self: center;
+    vertical-align:middle ;
+    align-items: center;
+    
+    width:50px;
+}
+a{
+    text-decoration: none;
+}
 
 header{
     height:680px;
@@ -37,11 +56,12 @@ header{
 }
 #head p{
     font-weight: 500;
+   
+    
 }
 #head img{
     height:60px;
 }
-
 .header-div{
     padding:6%;
     color:white;
@@ -621,15 +641,34 @@ footer a{
         padding:10px 0;
         max-width:430px;
         min-width:350px;
+        text-align: start;
     }
     #head div{
         width: 100%;
+    
+    }
+    
+    #fucken-img{
+        text-align: center;
+    }
+    #head a img{
+        height:26px;
+        width:50px;
+
+
     }
     #head p{
         margin:1px 4px;
         font-weight: 300;
         font-size:16px;
     }
+    /* #head a{
+        
+    align-self: flex-start;
+    vertical-align: middle;
+    justify-content: flex-start;
+
+    } */
     #head img{
         width:150px;
         height:30px;
@@ -1048,5 +1087,19 @@ footer a{
         height:50px;
         border-radius:25px;
         border:0;
+    }
+}
+
+
+
+@media screen and (max-width:430px){
+
+    footer ul{
+        text-align: start;
+        padding-top:6px;
+        padding-left:4vw;
+        list-style: none;
+        padding-bottom:20px;
+        margin:0;
     }
 }
