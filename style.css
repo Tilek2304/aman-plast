@@ -25,17 +25,20 @@ header{
     max-width:1380px;
     min-width: 800px;
     text-align: center;
+    width: 100%;
 }
 
-#head p{
-    margin:2px 40px;
-    font-weight: 500;
-    vertical-align: middle;
+#head div{
     align-self: center;
+    vertical-align: middle;
+    width:33% ;
+    justify-content: center;
+
+}
+#head p{
+    font-weight: 500;
 }
 #head img{
-    vertical-align: middle;
-    align-self: center;
     height:60px;
 }
 
@@ -618,6 +621,9 @@ footer a{
         padding:10px 0;
         max-width:430px;
         min-width:350px;
+    }
+    #head div{
+        width: 100%;
     }
     #head p{
         margin:1px 4px;
