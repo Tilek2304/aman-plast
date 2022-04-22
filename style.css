@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
-
 body{
     margin:0;
     font-family: Roboto;
@@ -10,24 +9,22 @@ body{
 
 }
 
+
+
 header{
     height:680px;
     margin-bottom:20px;
     margin:0 auto;
 }
 
-
 #head{
     display:flex;
     flex-direction: row;
-   align-items:  center;
-   align-self: center;
+    justify-content: center;
     padding:10px;
-    max-width:1800px;
+    max-width:1380px;
     min-width: 800px;
     text-align: center;
-    background-color: #99cccc;
-    justify-content: center;
 }
 
 #head p{
@@ -71,9 +68,9 @@ button[id="hd-btn1"]{
     cursor:pointer;
     color:white;
     font-size:18px;
-    border-radius:25px;
-    border:0;
-    background-color: rgb(58, 206, 52);
+    border-radius:30px;
+    border:1px solid rgb(25, 25, 90);
+    background-color: rgb(11, 38, 105);
 }
 button[id="hd-btn2"]{
     width:320px;
@@ -83,8 +80,8 @@ button[id="hd-btn2"]{
     color:white;
     font-size:18px;
     border-radius:30px;
-    border:0;
-    background-color: rgb(58, 206, 52);
+    border:1px solid rgb(25, 25, 90);
+    background-color: rgb(11, 38, 105);
 }
 
 
@@ -97,7 +94,7 @@ button[id="hd-btn2"]{
 #slider { /*положение слайдера*/
     position: relative;
     top: 0;
-    max-width:1600px;
+    max-width:1380px;
     min-width: 800px;
 }
 
@@ -215,49 +212,52 @@ label, a{ /*при наведении на стрелки или переклю�
 
 main{
     margin:0 auto;
+    color: rgb(23, 38, 77);
+    background-color: #f5f7f6;
+    background-image: linear-gradient(#f5f7f6 0%, #5ca0f2 80%, #395e8b 130%) ;
+}
 
-}
-section{
-    background-color: #99cccc;
-}
+/*section{
+    border-top: 1px solid rgb(23, 42, 92);
+    padding:30px 0;
+}*/
+
 h1{
-   padding:60px 0;
+    margin:0;
+    padding:60px 0;
     font-size: 46px;
     font-weight: 500;
     font-family: Roboto;
-    color: rgb(7, 184, 7);
-    margin:0;
+    
+    color: rgb(27, 53, 87);
+    color: rgb(23, 42, 92);
 }
 h3{
     font-size: 28px;
     font-weight: 500;
     font-family: Roboto;
-    color: rgb(7, 184, 7);
-
+    color: rgb(23, 42, 92);
 }
-
-p{
-    margin:0;
-}
-
 p a{
     font-weight: 500;
 }
 section{
     margin:0 auto;
-   padding-top: 40px;
+    padding-top: 40px;
     /*border-bottom:1px solid grey;*/
 }
 
 .intro{
     width:60%;
-    padding:0 20%;
+    
+    font-weight: 300;
+    font-size:28px;
 }
 
 .list{
     display:flex;
     width:100%;
-    max-width:1600px;
+    max-width:1380px;
     min-width: 800px;
 }
 .list ul{
@@ -276,13 +276,15 @@ section{
     width:160px;
     height:160px;
     margin:0 auto;
+    border: 2px solid rgb(23, 42, 92);
+    border-radius: 80px;
 }
 
 .magazine{
     padding-top: 20px;
     margin:0 auto;
     text-align: center;
-    max-width:1600px;
+    max-width:1380px;
     min-width: 800px;
 }
 
@@ -291,24 +293,41 @@ section{
     flex-direction: row;
     justify-content: center;
     padding:10px;
-    max-width:1600px;
+    max-width:1380px;
     min-width: 800px;
 }
 .camera-div{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-self: center;
     padding:10px;
-    max-width:1600px;
+    max-width:1380px;
     min-width: 800px;
+    font-size: 28px;
+}
+
+.camera-div img{
+    border: 2px solid rgb(23, 42, 92);
+    border-radius: 100px;
 }
 .camera-div1{
-    padding:10px;
-    width: 40%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+#camera-div2{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 }
 .camera-div2{
-    padding:10px;
-    width: 20%;
+    padding:30px 20px;
+    width: 100%;
 }
 
  .magazine-div div{
@@ -327,7 +346,7 @@ section{
 }
 .magazine-div li{
     display:flex;
-    border-bottom: 2px solid rgb(7, 184, 7);
+    border-bottom: 2px solid rgb(27, 53, 87);
 }
 .magazine-div p{
     flex-basis: 60%;
@@ -346,7 +365,7 @@ section{
     text-align: center;
     font-size: 22px;
     width:100%;
-    max-width:1600px;
+    max-width:1380px;
     min-width: 800px;
 }
 
@@ -356,12 +375,18 @@ section{
     align-items: center;
     width:100%;
     margin: 0 auto;
-   padding-bottom:90px;
+    margin-bottom:90px;
 }
+.profiles-div img{
+    border: 2px solid rgb(23, 42, 92);
+    border-radius: 80px;
+}
+
 
 .profiles-div1{
     padding:0 1%;
     font-size: 20px;
+    
 }
 .images{
     display: flex;
@@ -378,15 +403,24 @@ section{
 
 .profiles-div li{
     display:flex;
+    padding:5px 0;
+    font-size: 28px;
+    align-self: center;
+    align-items: center;
 }
 
 .profiles-p{
-    flex-basis: 100%;
-    font-size: 24px;
+    font-size: 30px;
+    padding: 10px 40px;
+    
+    
 }
 .profiles-border{
     border-bottom:1px solid grey;
 }
+
+
+
 
 
 .installation-div{
@@ -395,14 +429,14 @@ section{
     align-items: center;
     padding:10%;
     margin: 0 auto;
-   padding-bottom:90px;
+    margin-bottom:90px;
     
 }
 .order{
     padding-top: 20px;
     margin:0 auto;
     text-align: center;
-    max-width:1600px;
+    max-width:1380px;
     min-width: 800px;
 }
 .order-div{
@@ -411,8 +445,9 @@ section{
     justify-content: center;
 }
 .order-bottoms{
-   padding-bottom: 80px;
-    width:100%;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    width:80vw;
 }
 /*.order-div div{
     flex-basis: 25vw;
@@ -423,6 +458,7 @@ section{
     background-image: url("1tilda.jpg");
     background-size: cover;
     margin: 5px;
+    
 }
 .order-div #div2{
     height:300px;
@@ -462,7 +498,7 @@ section{
 
 .section-form{
     margin:0 auto;
-    padding:40px 10%;
+    padding:20px 10%;
     text-align: center;
 }
 #ajax-contact-form{
@@ -484,7 +520,8 @@ section{
 }
 
 .form-group{
-   padding:10px 5px;
+    padding:10px 5px;
+    margin:0;
     
 }
 
@@ -521,21 +558,22 @@ button[id="submitFF"]{
     height:50px;
     border-radius:25px;
     border:0;
-    background-color: rgb(58, 206, 52);
-    
+    background-color: rgb(23, 42, 92);
 }
 
 
 footer{
-    background-color: rgb(58, 206, 52);
+    background-color: #395e8b;
     color:white;
     margin:0 auto;
     text-align: center;
     height:100%;
-    padding-bottom: 40px;;
+    padding: 40px 0;
+    border-top: 1px solid rgb(23, 42, 92);
 }
 footer p{
     padding-top:40px;
+    margin:0;
     color:white;
 }
 footer ul{
@@ -618,8 +656,7 @@ footer a{
         color:white;
         font-size:18px;
         border-radius:25px;
-        border:0;
-        background-color: rgb(58, 206, 52);
+        border:1px solid rgb(25, 25, 90);
     }
     button[id="hd-btn2"]{
         width:240px;
@@ -629,8 +666,7 @@ footer a{
         color:white;
         font-size:18px;
         border-radius:30px;
-        border:0;
-        background-color: rgb(58, 206, 52);
+        border:1px solid rgb(25, 25, 90);
     }
 }
 @media screen and (max-width:430px){
@@ -644,19 +680,17 @@ footer a{
         font-size: 24px;
         font-weight: 500;
         font-family: Roboto;
-        color: rgb(7, 184, 7);
     }
     h3{
         font-size: 20px;
         font-weight: 500;
         font-family: Roboto;
-        color: rgb(7, 184, 7);
     }
 }
 @media screen and (max-width:430px){
     .image article{ /*размер изображений слайдера*/
         width: 100%;
-        height:312px;
+        height:412px;
         background-repeat: no-repeat;
     }
     #slider { /*положение слайдера*/
@@ -704,6 +738,7 @@ footer a{
         
     .intro{
         width:90%;
+        font-size:22px;
     }
 
     .list{
@@ -754,6 +789,7 @@ footer a{
         max-width:410px;
         min-width: 330px;
     }
+    
     .camera-div{
         font-size: 20px;
         display:flex;
@@ -764,13 +800,34 @@ footer a{
         min-width: 350px;
     }
     .camera-div1{
-        padding:4px;
+        padding:0;
         width: 100%;
     }
     .camera-div2{
         
-        padding:4px;
+        
         width: 90%;
+    }
+
+
+
+
+
+    .camera-div img{
+        border: 2px solid rgb(23, 42, 92);
+        border-radius: 100px;
+    }
+    .camera-div1{
+        width: 100%;
+        
+    
+    }
+    #camera-div2{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
     }
     
      .magazine-div div{
@@ -825,10 +882,9 @@ footer a{
 
     .profiles-div li{
         display:flex;
+        padding: 5px;
     }
-
     .profiles-p{
-        flex-basis: 100%;
         font-size: 18px;
     }
     .profiles-border{
@@ -927,7 +983,7 @@ footer a{
     
     .section-form{
         margin:0 auto;
-        padding:0 5px;
+        padding:20px 5px;
         text-align: center;
     }
     #ajax-contact-form{
@@ -986,6 +1042,5 @@ footer a{
         height:50px;
         border-radius:25px;
         border:0;
-        background-color: rgb(58, 206, 52);
     }
 }
