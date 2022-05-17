@@ -5,13 +5,13 @@ body{
     font-family: Roboto;
     font-size: 24px;
     font-weight: 300;
-    
+
 
 }
 #head a img{
     height:34px;
     width:50px;
-    
+
     align-self: center;
     vertical-align:middle ;
     align-items: center;
@@ -23,7 +23,7 @@ a img{
     align-self: center;
     vertical-align:middle ;
     align-items: center;
-    
+
     width:50px;
 }
 a{
@@ -54,7 +54,7 @@ header{
     align-items: center;
     justify-content: center;
     padding:0 20px;
-    
+
 }
 @media screen and (max-width:1500px) {
     #head{
@@ -89,8 +89,8 @@ header{
 
 .header-button{
     text-align: center;
-    
-    
+
+
 }
 
 header form{
@@ -137,7 +137,7 @@ button[id="hd-btn2"]{
 
 #slider{ /*центровка слайдера*/
     margin: 0 auto;
-    
+
 }
 
 input[type="radio"]{
@@ -148,13 +148,13 @@ input[type="radio"]{
 #slides article{ /*все изображения справа друг от доруга*/
 	width: 50%;
     float: left;
-    
+
 }
 
 #slides .image{ /*устанавливает общий размер блока с изображениями*/
 	width: 200%;
 
-    
+
 }
 
 #overflow{ /*сркывает все, что находится за пределами этого блока*/
@@ -168,11 +168,11 @@ input[type="radio"]{
 	background-repeat: no-repeat;
 }
 #image-1{
-	background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('6tilda.jpg');
+	background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('img/6tilda.jpg');
 	background-size: cover;
 }
 #image-2{
-	background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('6tilda.jpg');
+	background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('img/6tilda.jpg');
 	background-size: cover;
 }
 
@@ -184,7 +184,7 @@ input[type="radio"]{
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
 #switch2:checked ~ #controls label:nth-child(1){
-	background: url('prev.svg') no-repeat; /*заливка фона картинкой без повторений*/
+	background: url('img/prev.svg') no-repeat; /*заливка фона картинкой без повторений*/
 	position:relative;
 	float: left;
 	top:-25%;
@@ -196,7 +196,7 @@ input[type="radio"]{
 
 /*настройка переключения и положения для правой стрелки*/
 #switch1:checked ~ #controls label:nth-child(2){
-	background: url('next.svg') no-repeat; /*заливка фона картинкой без повторений*/
+	background: url('img/next.svg') no-repeat; /*заливка фона картинкой без повторений*/
 	position:relative;
 	float: right;
 	top:-25%;
@@ -265,7 +265,7 @@ h1{
     font-size: 46px;
     font-weight: 500;
     font-family: Roboto;
-    
+
     color: rgb(27, 53, 87);
     color: rgb(23, 42, 92);
 }
@@ -286,7 +286,7 @@ section{
 
 .intro{
     width:60%;
-    
+
     font-weight: 300;
     font-size:28px;
 }
@@ -423,13 +423,13 @@ section{
 .profiles-div1{
     padding:0 1%;
     font-size: 20px;
-    
+
 }
 .images{
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding:20px 10px;
-    
+
 }
 .profiles-div ul{
     list-style: none;
@@ -449,8 +449,8 @@ section{
 .profiles-p{
     font-size: 30px;
     padding: 10px 40px;
-    
-    
+
+
 }
 .profiles-border{
     border-bottom:1px solid grey;
@@ -493,43 +493,43 @@ section{
 .order-div #div1{
     height:300px;
     width:380px;
-    background-image: url("1tilda.jpg");
+    background-image: url("img/1tilda.jpg");
     background-size: cover;
     margin: 5px;
-    
+
 }
 .order-div #div2{
     height:300px;
     width:380px;
-    background-image: url("2tilda.jpg");
+    background-image: url("img/2tilda.jpg");
     background-size: cover;
     margin: 5px;
 }
 .order-div #div3{
     height:300px;
     width:380px;
-    background-image: url("3tilda.jpg");
+    background-image: url("img/3tilda.jpg");
     background-size: cover;
     margin: 5px;
 }
 .order-div #div4{
     height:300px;
     width:380px;
-    background-image: url("4tilda.jpg");
+    background-image: url("img/4tilda.jpg");
     background-size: cover;
     margin: 5px;
 }
 .order-div #div5{
     height:300px;
     width:380px;
-    background-image: url("5tilda.jpg");
+    background-image: url("img/5tilda.jpg");
     background-size: cover;
     margin: 5px;
 }
 .order-div #div6{
     height:300px;
     width:380px;
-    background-image: url("6tilda.jpg");
+    background-image: url("img/6tilda.jpg");
     background-size: cover;
     margin: 5px;
 }
@@ -560,7 +560,7 @@ section{
 .form-group{
     padding:10px 5px;
     margin:0;
-    
+
 }
 
 input[type="text"], input[type="tel"]{
@@ -622,7 +622,7 @@ footer ul{
     margin:0;
 }
 footer li{
-    padding:2px 0; 
+    padding:2px 0;
 }
 footer a{
     color:white;
@@ -636,7 +636,7 @@ footer a{
         font-family: Roboto;
         font-size: 20px;
         font-weight: 300;
-    
+
     }
 }
 
@@ -661,9 +661,9 @@ footer a{
     #head div{
         width: 100%;
         padding: 0;
-    
+
     }
-    
+
     #fucken-img{
         text-align: center;
     }
@@ -679,7 +679,7 @@ footer a{
         font-size:16px;
     }
     /* #head a{
-        
+
     align-self: flex-start;
     vertical-align: middle;
     justify-content: flex-start;
@@ -689,7 +689,7 @@ footer a{
         width:150px;
         height:30px;
     }
-    
+
 }
 @media screen and (max-width:430px){
     .header-div{
@@ -699,15 +699,15 @@ footer a{
     }
     .header-div h1{
         color:white;
-        
+
     }
-    
+
     /*.header-button{
         display:flex;
         flex-direction: row;
         align-self: center;
         vertical-align: middle;
-        
+
     }*/
     button[id="hd-btn1"]{
         width:240px;
@@ -769,7 +769,7 @@ footer a{
     /*настройка переключения и положения для левой стрелки*/
     /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
     #switch2:checked ~ #controls label:nth-child(1){
-        background: url('prev.svg') no-repeat; /*заливка фона картинкой без повторений*/
+        background: url('img/prev.svg') no-repeat; /*заливка фона картинкой без повторений*/
         position:relative;
         float: left;
         /*margin: -10vh 0 0 8px; /*сдвиг влево*/
@@ -780,7 +780,7 @@ footer a{
 
     /*настройка переключения и положения для правой стрелки*/
     #switch1:checked ~ #controls label:nth-child(2){
-        background: url('next.svg') no-repeat; /*заливка фона картинкой без повторений*/
+        background: url('img/next.svg') no-repeat; /*заливка фона картинкой без повторений*/
         position:relative;
         float: right;
         /*margin: -10vh 8px 0 0; /*сдвиг вправо*/
@@ -797,7 +797,7 @@ footer a{
 
 }
 @media screen and (max-width:430px){
-        
+
     .intro{
         margin-top:80px;
         padding-top:50px;
@@ -810,7 +810,7 @@ footer a{
         width:100%;
         max-width:430;
         min-width: 350px;
-        
+
     }
     .list ul{
         width:100%;
@@ -845,7 +845,7 @@ footer a{
         min-width: 350px;
         font-weight: 500;
     }
-    
+
     .magazine-div{
         display:flex;
         flex-direction: column;
@@ -854,7 +854,7 @@ footer a{
         max-width:410px;
         min-width: 330px;
     }
-    
+
     .camera-div{
         font-size: 22px;
         display:flex;
@@ -869,8 +869,8 @@ footer a{
         width: 100%;
     }
     .camera-div2{
-        
-        
+
+
         width: 90%;
     }
 
@@ -884,8 +884,8 @@ footer a{
     }
     .camera-div1{
         width: 100%;
-        
-    
+
+
     }
     #camera-div2{
         display:flex;
@@ -894,19 +894,19 @@ footer a{
         align-items: center;
         align-self: center;
     }
-    
+
      .magazine-div div{
         padding:1px;
         width: 100%;
     }
-    
+
     .magazine-div p{
         flex-basis: 80%;
     }
-    
+
 }
 @media screen and (max-width:430px){
-    
+
     .profiles{
         padding-top: 20px;
         margin:0 auto;
@@ -931,9 +931,9 @@ footer a{
 
     .images{
         display: flex;
-        align-items: center; 
+        align-items: center;
         padding:2px 2px;
-        
+
     }
     .images img{
         height:180px;
@@ -971,7 +971,7 @@ footer a{
         margin-bottom:90px;
         font-weight: 300;
         font-size: 22px;
-        
+
     }
     .installation-div h3{
         padding-left: 20px;
@@ -980,14 +980,14 @@ footer a{
         height:340px;
     }
 }
-@media screen and (max-width:430px){ 
+@media screen and (max-width:430px){
     .order{
         padding-top: 20px;
         margin:0 auto;
         text-align: center;
         max-width:430px;
         min-width: 350px;
-        
+
     }
     .order-container{
         display:flex;
@@ -1007,55 +1007,55 @@ footer a{
     .order-div #div1{
         height:150px;
         width:160px;
-        background-image: url("1tilda.jpg");
+        background-image: url("img/1tilda.jpg");
         background-size: cover;
         margin: 5px;
     }
     .order-div #div2{
         height:150px;
         width:160px;
-        background-image: url("2tilda.jpg");
+        background-image: url("img/2tilda.jpg");
         background-size: cover;
         margin: 5px;
     }
     .order-div #div3{
         height:150px;
         width:160px;
-        background-image: url("3tilda.jpg");
+        background-image: url("img/3tilda.jpg");
         background-size: cover;
         margin: 5px;
     }
     .order-div #div4{
         height:150px;
         width:160px;
-        background-image: url("4tilda.jpg");
+        background-image: url("img/4tilda.jpg");
         background-size: cover;
         margin: 5px;
     }
     .order-div #div5{
         height:150px;
         width:160px;
-        background-image: url("5tilda.jpg");
+        background-image: url("img/5tilda.jpg");
         background-size: cover;
         margin: 5px;
     }
     .order-div #div6{
         height:150px;
         width:160px;
-        background-image: url("6tilda.jpg");
+        background-image: url("img/6tilda.jpg");
         background-size: cover;
         margin: 5px;
     }
 }
 
 @media screen and (max-width:430px){
-    
+
     .section-form{
         margin:0 auto;
         padding:20px 5px;
         text-align: center;
     }
-    
+
     #ajax-contact-form{
         display:flex;
         flex-direction: column;
@@ -1076,7 +1076,7 @@ footer a{
 
     .form-group{
         margin:10px 5px;
-        
+
     }
 
     input[type="text"], input[type="tel"]{

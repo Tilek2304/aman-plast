@@ -1,45 +1,37 @@
 <?php
-if (isset ($_POST['contactFF'])) {
-  $to = "esenaliev2304@gmail.com";
-  $subject = "Заполнена контактная форма на сайте ".$_SERVER['HTTP_REFERER'];
-  $message = "Имя пользователя: ".$_POST['nameFF']."\nТелефон пользователя ".$_POST['telFF']."\nСообщение: ".$_POST['projectFF']."\n\nАдрес сайта: ".$_SERVER['HTTP_REFERER'];
- 
-  $boundary = md5(date('r', time()));
-  $filesize = '';
-  $headers = "MIME-Version: 1.0\r\n";
-  $headers .= "From: " . $from . "\r\n";
-  $headers .= "Reply-To: " . $from . "\r\n";
-  $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
-  $message="
-Content-Type: multipart/mixed; boundary=\"$boundary\"
- 
---$boundary
-Content-Type: text/plain; charset=\"utf-8\"
-Content-Transfer-Encoding: 7bit
- 
-$message";
-     if(is_uploaded_file($_FILES['fileFF']['tmp_name'])) {
-         $attachment = chunk_split(base64_encode(file_get_contents($_FILES['fileFF']['tmp_name'])));
-         $filename = $_FILES['fileFF']['name'];
-         $filetype = $_FILES['fileFF']['type'];
-         $filesize = $_FILES['fileFF']['size'];
-         $message.="
- 
---$boundary
-Content-Type: \"$filetype\"; name=\"$filename\"
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename=\"$filename\"
- 
-$attachment";
+
+  require("PHPMailer/src/PHPMailer.php");
+  require("PHPMailer/src/SMTP.php");
+  header('Content-Type: application/json');
+
+
+  $name = $_POST['nameFF'];
+  $phone = $_POST['telFF'];
+  $textarea = $_POST['projectFF'];
+
+    $mail = new PHPMailer\PHPMailer\PHPMailer();
+    $mail->IsSMTP(); // enable SMTP
+
+    $mail->SMTPDebug = 2; // debugging: 1 = errors and messages, 2 = messages only
+    $mail->SMTPAuth = true; // authentication enabled
+    $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+    $mail->Host = "smtp.gmail.com";
+    $mail->Port = 465; // or 587
+    $mail->IsHTML(true);
+    $mail->Username = "aman.plast.site@gmail.com";
+    $mail->Password = "develop06may";
+    $mail->SetFrom("aman.plast.site@gmail.com");
+    $mail->Subject = 'aman-plast.store';
+$mail->Body    = '
+        Пользователь оставил данные <br> <br>
+    Имя: ' . $name . ' <br><br>
+    Номер телефона: ' . $phone . '<br><br>
+    Cообщение: ' .$textarea . '';
+    $mail->AddAddress("aman.plast.site@gmail.com");
+
+     if(!$mail->Send()) {
+        echo "Mailer Error: " . $mail->ErrorInfo;
+     } else {
+        echo "Message has been sent";
      }
-   $message.="
---$boundary--";
- 
-  if ($filesize < 10000000) { // проверка на общий размер всех файлов. Многие почтовые сервисы не принимают вложения больше 10 МБ
-    mail($to, $subject, $message, $headers);
-    echo $_POST['nameFF'].', Ваше сообщение отправлено, спасибо!';
-  } else {
-    echo 'Извините, письмо не отправлено. Размер всех файлов превышает 10 МБ.';
-  }
-}
 ?>
